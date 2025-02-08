@@ -11,12 +11,32 @@ const routes :RouteRecordRaw[] = [
         },
         component: () => import('../views/Home.vue')
     },
+    {
+        path: '/login',
+        name: 'Login',
+        meta:{
+            title: '登录',
+            cache:true
+        },
+        component: () => import('../views/Login.vue')
+    },
+    {
+        path:'/userInfo/:userId',
+        name:'UserInfo',
+        meta:{
+            title: '用户信息',
+            cache:true
+        },
+        component: () => import('../views/UserInfo.vue')
+    }
 ]
 
 const router = createRouter({
     history: createWebHistory(),
     routes
 })
+
+// 全局前置守卫
 
 
 export default router

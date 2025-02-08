@@ -1,6 +1,7 @@
 
 <template>
-  <div class="w-full h-screen">
+  <div class="w-full h-screen" id="app">
+    
   <router-view></router-view>
   </div>
 
