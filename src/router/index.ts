@@ -9,7 +9,37 @@ const routes :RouteRecordRaw[] = [
             title: '首页',
             cache:true
         },
-        component: () => import('../views/Home.vue')
+        component: () => import('../views/Home.vue'),
+        children: [
+            {
+                path:'/wallCard/:user_id',
+                name: 'wallCard',
+                meta:{
+                    title: '留言墙',
+                    cache:true
+                },
+                component: () => import('../components/WallCard.vue')
+            },
+            {
+                path:'/wallCard',
+                name: 'wallCardWithoutId',
+
+                meta:{
+                    title: '留言墙',
+                    cache:true
+                },
+                component: () => import('../components/WallCard.vue')
+            },
+            {
+                path:'/Video/:user_id',
+                name: 'Video',
+                meta:{
+                    title: '视频墙',
+                    cache:true
+                },
+                component: () => import('../components/Video.vue')
+            }
+        ]
     },
     {
         path: '/login',

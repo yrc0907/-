@@ -100,7 +100,7 @@ const handleLogin = async() => {
       authStore.login(username, password)
       console.log('准备提交的登录数据:', loginForm);
       ElMessage.success('登录成功');
-      router.push('/');
+      router.push(`/wallCard/${authStore.user_id}`);
 
     } else {
       ElMessage.error('表单验证失败');

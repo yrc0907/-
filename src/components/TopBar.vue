@@ -9,7 +9,7 @@
       </div>
       <!-- 留言墙和照片墙切换 -->
       <div class="flex items-center space-x-4">
-        <RippleButton @click="emitChangeWall(1)"> 留言墙</RippleButton>
+        <RippleButton @click="ToWallCard(authStore.user_id)"> 留言墙</RippleButton>
 
         <RippleButton @click="emitChangeWall(2)"> 照片墙</RippleButton>
 
@@ -52,12 +52,14 @@ function login() {
   router.push('/login');
 }
 
-
-const emit = defineEmits(['changeWall']);
-
-function emitChangeWall(num: number) {
-  EventBus.emit('changeWall', num);
+const ToWallCard = (user_id) => {
+  router.push(`/wallCard/${user_id}`);
 }
+// const emit = defineEmits(['changeWall']);
+
+// function emitChangeWall(num: number) {
+//   EventBus.emit('changeWall', num);
+// }
 </script>
 
 <style lang="">

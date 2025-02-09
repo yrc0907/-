@@ -36,7 +36,7 @@ userId.value = route.params.userId as string;
 
 const logout = async () => {
   authStore.logout();
-  router.push('/');
+  router.push('/wallCard');
 }
 
 onMounted(() => {
