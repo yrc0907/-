@@ -11,9 +11,9 @@
       <div class="flex items-center space-x-4">
         <RippleButton @click="ToWallCard(authStore.user_id)"> 留言墙</RippleButton>
 
-        <RippleButton @click="emitChangeWall(2)"> 照片墙</RippleButton>
+        <!-- <RippleButton @click="emitChangeWall(2)"> 照片墙</RippleButton> -->
 
-        <RippleButton @click="emitChangeWall(3)"> 视频墙</RippleButton>
+        <RippleButton @click="ToVideoWall(authStore.user_id)"> 视频墙</RippleButton>
       </div>
 
     <div v-if="!authStore.isLogin" class="flex items-center space-x-4">
@@ -35,7 +35,6 @@
 <script lang="ts" setup>
 import RippleButton from './ui/RippleButton.vue';
 import InteractiveHoverButton from './ui/InteractiveHoverButton.vue'
-import EventBus from '../lib/event-bus';
 import { useRouter } from 'vue-router';
 import AvatarInfo from './AvatarInfo.vue';
 import { ref } from 'vue';
@@ -52,14 +51,14 @@ function login() {
   router.push('/login');
 }
 
-const ToWallCard = (user_id) => {
+const ToWallCard = (user_id:string) => {
   router.push(`/wallCard/${user_id}`);
 }
-// const emit = defineEmits(['changeWall']);
 
-// function emitChangeWall(num: number) {
-//   EventBus.emit('changeWall', num);
-// }
+const ToVideoWall = (user_id:string) => {
+  router.push(`/video/${user_id}`);
+}
+
 </script>
 
 <style lang="">

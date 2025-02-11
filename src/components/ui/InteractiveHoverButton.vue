@@ -1,6 +1,6 @@
 <template>
   <button ref="buttonRef" :class="cn(
-    'group relative w-32 cursor-pointer overflow-hidden rounded-full border bg-background p-2 text-center font-semibold',
+    'group relative w-32 cursor-pointer hover:bg-black hover:text-white overflow-hidden rounded-full border bg-background p-2 text-center font-semibold',
     props.class,
   )
     ">
@@ -10,7 +10,7 @@
     </span>
 
     <div
-      class="absolute top-0 z-10 flex size-full translate-x-12 items-center justify-center gap-2 text-primary-foreground opacity-0 transition-all duration-300 group-hover:-translate-x-1 group-hover:opacity-100">
+      class="absolute top-0 z-10 flex size-full  translate-x-12 items-center justify-center gap-2 text-primary-foreground opacity-0 transition-all duration-300 group-hover:-translate-x-1 group-hover:opacity-100">
       <span>{{ text }}</span>
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"

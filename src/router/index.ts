@@ -9,6 +9,7 @@ const routes :RouteRecordRaw[] = [
             title: '首页',
             cache:true
         },
+        redirect:'/wallCard',
         component: () => import('../views/Home.vue'),
         children: [
             {
@@ -31,7 +32,7 @@ const routes :RouteRecordRaw[] = [
                 component: () => import('../components/WallCard.vue')
             },
             {
-                path:'/Video/:user_id',
+                path:'/video/:user_id',
                 name: 'Video',
                 meta:{
                     title: '视频墙',
@@ -58,6 +59,15 @@ const routes :RouteRecordRaw[] = [
             cache:true
         },
         component: () => import('../views/UserInfo.vue')
+    },
+    {
+        path:'/contentDetail/:content_id',
+        name: 'Detail',
+        meta:{
+            title: '详情',
+            cache:true
+        },
+        component: () => import('../components/Detail.vue')
     }
 ]
 

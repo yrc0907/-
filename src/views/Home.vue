@@ -1,7 +1,7 @@
 <template> 
   <div>
     <TopBar/>
-    <<router-view></router-view>
+    <router-view></router-view>
     <!-- <WallMessage/> -->
     <AddCard/>
   </div>
