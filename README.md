@@ -13,3 +13,10 @@ Vue3,  Axios,  Nodejs,  Express,  Mysql,  Deepseek,  doubao-seaweed,  阿里云O
 - 评论界面支持多级嵌套评论，点赞，回复以及利用deepseek进行流式回复功能💬。
 - 利用WebSocket实现私聊功能，WebRTC实现视频通话功能，并基于阿里云OCR对视频通话进行处理☎️。
 - 利用Element Plus,tailwincss,inspira UI打造具有响应式和美观的UI界面👍
+
+# 关于后端代码
+写的时候因为嫌架构麻烦，所以写成屎山了😭，正在修改后端架构中，所以暂时后端的代码库暂时不公布。
+
+# 关于前端代码
+这个项目做了五天，功能又多，所以也写成屎山了……
+
