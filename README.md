@@ -7,9 +7,9 @@
 Vue3,  Axios,  Nodejs,  Express,  Mysql,  Deepseek,  doubao-seaweed,  阿里云OCR,  Webscoket,  WebRTC。
 ## 技术特点📚
 - 使用双token认证，增强安全性以及用户体验🔒。
-- 视频上传支持大文件分片上传，断点上传，秒传，以及利用抖音旗下的即梦Ai智能生成视频🚀。
-- 视频详情页进行了懒加载，预处理以及CSS层面相关性能优化🐟。
-- 视频利用阿里云OSS进行储存，使用阿里云视频OCR对上传视频进行分析，并使用deepseek进行内容处理生成摘要🐂🍺。
+- 视频上传支持大文件分片上传，断点上传，秒传，以及利用抖音旗下的即梦Ai智能生成视频🚀,并使用阿里云OSS进行储存，
+- 视频页进行了懒加载，预处理以及CSS层面相关性能优化🐟。
+- 视频利用阿里云视频OCR对上传视频进行分析，并使用deepseek进行内容处理生成摘要🐂🍺。以及使用阿里云GenerateVideoCover智能生成视频封面,
 - 评论界面支持多级嵌套评论，点赞，回复以及利用deepseek进行流式回复功能💬。
 - 利用WebSocket实现私聊功能，WebRTC实现视频通话功能，并基于阿里云OCR对视频通话进行处理☎️。
 - 利用Element Plus,tailwincss,inspira UI打造具有响应式和美观的UI界面👍
